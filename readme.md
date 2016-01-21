@@ -4,10 +4,25 @@ This is a simple Multiselect dropdown plugin for `AngularJS`. It has no other de
 
 ###Installation
 
-Refer the `multiselect.directive.js` and one of the css (`dropdown.css` or `dropdown.min.css`) in your HTML. Add the following as your `ng.module` dependency
-    **'ui.multiselectDropdown'**
+**Using `bower`**
+
+    bower install bikasv-angular-multiselect
+
+
+**Using `npm`**
+
+    npm install bikasv-angular-multiselect
+
+**Manually**
+
+Reference `multiselect.directive.js` and one of the css (`dropdown.css` or `dropdown.min.css`), from `dist` folder of this repository in your HTML.
 
 ###Usage
+
+ Add the following as your `angular module` dependency
+
+
+    'ui.multiselectDropdown'
 
 Use the following syntax to create the dropdown -
 
