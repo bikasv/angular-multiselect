@@ -22,17 +22,17 @@ Use the following syntax to create the dropdown -
 
 Where parameters are -
 
-* header (optional) - Default header text when no option is selected. This will appear only once for single select dropdowns.
+* `header` (optional) - Default header text when no option is selected. This will appear only once for single select dropdowns.
     * Default: `null`
-* option-data (required) - Array of items which will for the dropdown. This array can either be `string` array or `object` array. For `object array`, the value must be in following format (any other parameter will be ignored by the library)
+* `option-data` (required) - Array of items which will for the dropdown. This array can either be `string` array or `object` array. For `object array`, the value must be in following format (any other parameter will be ignored by the library)
     - {key: 1, value: 'Value'}
-* selected-values (optional) - List of values that is selected by default. It's format must be same as `option-data`.
+* `selected-values` (optional) - List of values that is selected by default. It's format must be same as `option-data`.
     * Default: `[]`
-* is-searchable (optional) - It adds a input filter to the list of dropdowns.
+* `is-searchable` (optional) - It adds a input filter to the list of dropdowns.
     * Default: `false`
-* single-select (optional) - If set to true, it'll act as single select dropdown.
+* `single-select` (optional) - If set to true, it'll act as single select dropdown.
     * Default: `false`
-* selected-events (required) - Although not mandatory, this is the only way to get the values of dropdown. It's a callback function which will return the `array of selected values` to the calling function.
+* `selected-events` (required) - Although not mandatory, this is the only way to get the values of dropdown. It's a callback function which will return the `array of selected values` to the calling function.
     * Default: `null`
 
 ###Styling
