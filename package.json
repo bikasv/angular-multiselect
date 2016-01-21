@@ -1,0 +1,28 @@
+{
+  "name": "angular-multiselect",
+  "version": "0.1.0",
+  "description": "A multiselect widget for AngularJS done in plain JavaScript and CSS",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bikasv/angular-multiselect.git"
+  },
+  "keywords": [
+    "multiselect",
+    "multi-select",
+    "dropdown",
+    "angularjs"
+  ],
+  "author": "Bikas Vaibhav <bikasvaibhav@gmail.com> (http://bikasv.com/blog)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bikasv/angular-multiselect/issues"
+  },
+  "homepage": "https://github.com/bikasv/angular-multiselect#readme"
+}
