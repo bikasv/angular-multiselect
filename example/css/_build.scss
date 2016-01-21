@@ -1,0 +1,40 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.title-nav {
+    background-color: #342b43;
+    color: #fff;
+    height: 45px;
+    line-height: 45px;
+    position: fixed;
+    width: 100%;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.example-container {
+    width: 30%;
+    margin: 0 35%;
+    padding-top: 55px;
+}
+
+.data-div {
+    margin: 10px 0;
+    padding: 0 10px;
+}
+
+.button {
+    background-color: #3a88ee;
+    border: 0;
+    color: #fff;
+    padding: 5px 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    box-shadow: 0 0 5px #2977dd;
+
+    &:hover {
+        background-color: #2977dd;
+    }
+}

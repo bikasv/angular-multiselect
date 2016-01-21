@@ -1,0 +1,102 @@
+.down-caret {
+    &:before {
+        content: "\25bc"
+    }
+}
+
+.icon-unchecked {
+    &:before {
+        content: "\2610"
+    }
+}
+
+.icon-checked {
+    &:before {
+        content: "\2611"
+    }
+}
+
+.multiselect-parent {
+
+    .multiselect-header {
+        height: 30px;
+        line-height: 30px;
+        background-color: #dedede;
+        box-shadow: 0 0 5px #ddd;
+        padding: 0 5px 0 10px;
+        cursor: pointer;
+
+        &:hover, &:active {
+            background-color: #cdcdcd;
+        }
+
+        .header-text {
+            display: inline-block;
+            width: calc(100% - 25px);
+        }
+
+        .carent-indicator {
+            display: inline-block;
+            width: 18px;
+            float: right;
+            padding-left: 5px;
+            border-left: 1px solid #aaa;
+            color: #454545;
+        }
+    }
+
+    .multiselect-ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        box-shadow: 0 0 5px #ddd;
+        overflow: hidden;
+        height: auto;
+        max-height: 0px;
+        transition: all linear 250ms;
+
+        &.shown {
+            border: 1px solid #ddd;
+            max-height: 250px;
+        }
+
+        .multiselect-li {
+            height: 35px;
+            line-height: 35px;
+            border-bottom: 1px solid #ddd;
+
+            &:last-of-type {
+                border: 0;
+            }
+
+            &:hover, &:active {
+                background-color: #f6f6f6;
+            }
+
+            .multiselect-anchor {
+                cursor: pointer;
+                display: block;
+                padding: 0 10px 0 5px;
+
+                .multi-selector {
+                    margin-right: 10px;
+                }
+            }
+
+            .multiselect-search {
+                display: block;
+                border: 1px solid #eee;
+                height: 35px;
+                padding: 0 10px;
+                width: 100%;
+                box-sizing: border-box;
+                outline: none;
+
+                &:focus {
+                    border: 1px solid #ccc;
+                }
+            }
+        }
+    }
+}
+

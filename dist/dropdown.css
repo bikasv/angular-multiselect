@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+.down-caret:before {
+    content: "▼";
+}
+
+.icon-unchecked:before {
+    content: "☐";
+}
+
+.icon-checked:before {
+    content: "☑";
+}
+
+.multiselect-parent .multiselect-header {
+    height: 30px;
+    line-height: 30px;
+    background-color: #dedede;
+    box-shadow: 0 0 5px #ddd;
+    padding: 0 5px 0 10px;
+    cursor: pointer;
+}
+
+.multiselect-parent .multiselect-header:hover, .multiselect-parent .multiselect-header:active {
+    background-color: #cdcdcd;
+}
+
+.multiselect-parent .multiselect-header .header-text {
+    display: inline-block;
+    width: calc(100% - 25px);
+}
+
+.multiselect-parent .multiselect-header .carent-indicator {
+    display: inline-block;
+    width: 18px;
+    float: right;
+    padding-left: 5px;
+    border-left: 1px solid #aaa;
+    color: #454545;
+}
+
+.multiselect-parent .multiselect-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 0 5px #ddd;
+    overflow: hidden;
+    height: auto;
+    max-height: 0px;
+    transition: all linear 250ms;
+}
+
+.multiselect-parent .multiselect-ul.shown {
+    border: 1px solid #ddd;
+    max-height: 250px;
+}
+
+.multiselect-parent .multiselect-ul .multiselect-li {
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px solid #ddd;
+}
+
+.multiselect-parent .multiselect-ul .multiselect-li:last-of-type {
+    border: 0;
+}
+
+.multiselect-parent .multiselect-ul .multiselect-li:hover, .multiselect-parent .multiselect-ul .multiselect-li:active {
+    background-color: #f6f6f6;
+}
+
+.multiselect-parent .multiselect-ul .multiselect-li .multiselect-anchor {
+    cursor: pointer;
+    display: block;
+    padding: 0 10px 0 5px;
+}
+
+.multiselect-parent .multiselect-ul .multiselect-li .multiselect-anchor .multi-selector {
+    margin-right: 10px;
+}
+
+.multiselect-parent .multiselect-ul .multiselect-li .multiselect-search {
+    display: block;
+    border: 1px solid #eee;
+    height: 35px;
+    padding: 0 10px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.multiselect-parent .multiselect-ul .multiselect-li .multiselect-search:focus {
+    border: 1px solid #ccc;
+}
