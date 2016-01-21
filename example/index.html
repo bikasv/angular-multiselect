@@ -22,6 +22,15 @@
                 <div class="data-div">Selections: {{vm.values1 || []}}</div>
 
                 <multiselect-dropdown
+                    header="vm.headerText3"
+                    option-data="vm.originHeaders"
+                    single-select="true"
+                    is-searchable="true"
+                    selected-events="vm.originSelectCallback3">
+                </multiselect-dropdown>
+                <div class="data-div">Selection: {{vm.values3 || []}}</div>
+
+                <multiselect-dropdown
                     header="vm.headerText2"
                     option-data="vm.originHeaders2"
                     selected-values="vm.selected"
@@ -33,15 +42,6 @@
                 <button ng-click="vm.makeSelection()" class="button">Select 2 Items</button>
 
                 <button ng-click="vm.resetDefaultSelection()" class="button">Empty Selection</button>
-
-                <multiselect-dropdown
-                    header="vm.headerText3"
-                    option-data="vm.originHeaders"
-                    single-select="true"
-                    is-searchable="true"
-                    selected-events="vm.originSelectCallback3">
-                </multiselect-dropdown>
-                <div class="data-div">Selection: {{vm.values3 || []}}</div>
             </div>
         
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular.min.js"></script>
